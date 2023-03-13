@@ -1,1 +1,1 @@
-https://github.com/BreadyToPie/cssBayan
+https://breadytopie.github.io/cssBayan/
