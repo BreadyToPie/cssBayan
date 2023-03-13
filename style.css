@@ -1,0 +1,162 @@
+/* reset */
+@import url(/reset.css);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end reset */
+/* start css bayan */
+
+body{
+    margin:0;
+    background: #fefae0;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fefae0;
+    color:blue;
+}
+
+header{
+    font-size: 3rem;
+    font-weight: 1000;
+    background: #fefae0;
+    padding: 3% 0 1% 5.5%;
+    border-bottom: 3px solid lightgrey;
+}
+.accordion{
+width: 91%;
+margin: 25px;
+}
+
+.accordion li{
+    list-style: none;
+    width: 100%;
+    margin: -10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+            -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.accordion li label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 1000;
+    cursor: pointer;
+}
+
+
+input[type="checkbox"]{
+    display: none;
+}
+
+.accordion .content {
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+
+.accordion input[type="checkbox"]:checked + label + .content {
+    max-height: 100vh;
+    padding: 10px 10px 20px;
+  }
+
+  .accordion input[type="checkbox"]:not(:checked) + label + .content {
+    max-height: 0;
+    padding: 0 10px;
+    overflow: hidden;
+  }
+
+.wrapper:hover{
+    color:black;
+}
+
+input[type=checkbox]:checked~label {
+    color: black;
+}
+
+a{
+    text-decoration: none;
+}
+a:visited{
+    color: blue;
+}
+
+.meme_1{
+background: center url("https://cs4.pikabu.ru/post_img/2016/06/22/8/1466600014197950650.gif")no-repeat;
+padding-bottom: 29%;
+}
+.meme_2{
+background: center url("https://pbs.twimg.com/media/Dk0FsCNXcAIirY9.jpg") no-repeat;
+background-size: 25%;
+padding-bottom: 29%;
+}
+
+.meme_4{
+background: center url("https://media.tenor.com/jH9x96rRwRUAAAAd/%D1%81%D0%B2%D0%B8%D0%BD%D1%8F%D0%B4%D0%B6%D0%B0%D0%BA%D1%83%D0%B7%D1%96-%D1%81%D0%B2%D0%B8%D0%BD%D1%8F.gif")no-repeat;
+padding-bottom: 30%;
+}
+
+
+@media screen and (max-width: 900px) {
+    .meme_1{
+        background: center/50% url("https://cs4.pikabu.ru/post_img/2016/06/22/8/1466600014197950650.gif")no-repeat;
+
+        }
+
+        .meme_4{
+            background: center/50% url("https://media.tenor.com/jH9x96rRwRUAAAAd/%D1%81%D0%B2%D0%B8%D0%BD%D1%8F%D0%B4%D0%B6%D0%B0%D0%BA%D1%83%D0%B7%D1%96-%D1%81%D0%B2%D0%B8%D0%BD%D1%8F.gif")no-repeat;
+            padding-bottom: 30%;
+        }
+
+        .meme_2{
+            background: center/29% url("https://pbs.twimg.com/media/Dk0FsCNXcAIirY9.jpg") no-repeat;
+
+
+            }
+    }
